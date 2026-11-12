@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>~*~ Peter Gravgaards Hjemmeside ~*~</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;background:#000 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='120' height='120' fill='%23000014'/%3E%3Cg fill='%23fff'%3E%3Ccircle cx='10' cy='15' r='1'/%3E%3Ccircle cx='70' cy='40' r='1.4'/%3E%3Ccircle cx='100' cy='90' r='1'/%3E%3Ccircle cx='35' cy='80' r='.8'/%3E%3Ccircle cx='90' cy='10' r='.7'/%3E%3C/g%3E%3Cg fill='%23ff0'%3E%3Ccircle cx='55' cy='105' r='1.2'/%3E%3C/g%3E%3C/svg%3E");color:#0f0;font-family:"Comic Sans MS","Comic Sans",cursive;text-align:center}
+.box{max-width:720px;margin:20px auto;background:#000080;border:6px ridge #c0c0c0;padding:12px}
+h1{font-size:2.4em;color:#ff0;text-shadow:3px 3px #f0f;margin:.3em 0}
+.rainbow{background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,magenta);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:bold}
+.blink{animation:b 1s steps(1) infinite}@keyframes b{50%{visibility:hidden}}
+marquee{background:#ff0;color:#f00;font-weight:bold;padding:4px;border:2px dashed #f00}
+hr{border:0;height:6px;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,magenta)}
+a{color:#0ff}a:visited{color:#f0f}a:hover{color:#ff0;background:#f00}
+.uc{display:inline-block;background:repeating-linear-gradient(45deg,#000 0 12px,#ff0 12px 24px);padding:6px}
+.uc span{background:#ff0;color:#000;font-family:Arial,sans-serif;font-weight:bold;padding:4px 10px}
+table{margin:auto;border-collapse:collapse}td{border:3px outset #c0c0c0;background:#c0c0c0;color:#000;padding:6px 12px;font-family:"Times New Roman",serif}
+.counter{font-family:"Courier New",monospace;background:#000;color:#f00;border:2px inset #888;padding:2px 6px;letter-spacing:3px;font-size:1.3em}
+.small{font-size:.8em;color:#ccc}
+.spin{display:inline-block;animation:s 3s linear infinite}@keyframes s{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<marquee scrollamount="6">*** VELKOMMEN TIL GRAVGAARD.SI *** Siden er under opbygning *** Tak fordi du kigger forbi! ***</marquee>
+<div class="box">
+<h1><span class="spin">&#11088;</span> Peter Gravgaard <span class="spin">&#11088;</span></h1>
+<p class="rainbow">~ Min helt egen plads p&aring; Informationsmotorvejen ~</p>
+<hr>
+<div class="uc"><span>&#128679; UNDER CONSTRUCTION &#128679;</span></div>
+<p class="blink" style="color:#ff0">NY! NY! NY!</p>
+<p>Hej og velkommen! Jeg hedder Peter, bor i <b>Aalborg</b> og l&aelig;ser <b>DAKI</b> (Digitalisering og anvendt kunstig intelligens) p&aring; <b>Aalborg Universitet</b>.</p>
+<p>Her kommer der snart mere indhold. Kom igen senere!</p>
+<hr>
+<table><tr><td>&#128231; Skriv til mig</td><td><a href="mailto:peter@gravgaard.si">peter@gravgaard.si</a></td></tr>
+<tr><td>&#128025; GitHub</td><td><a href="https://github.com/PeterGravgaard">PeterGravgaard</a></td></tr></table>
+<hr>
+<p>Du er bes&oslash;gende nummer <span class="counter" id="c">000000</span></p>
+<p class="small">Bedst set i Netscape Navigator 4.0 ved 800x600 &bull; Lavet med Notesblok</p>
+<p class="small">&copy; 1999&ndash;<span id="y"></span> gravgaard.si</p>
+</div>
+<script>
+var n=parseInt(localStorage.getItem('v')||'1337',10)+1;localStorage.setItem('v',n);
+document.getElementById('c').textContent=('000000'+n).slice(-6);
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
